@@ -1,0 +1,14 @@
+.container{
+    width: 500px;
+    background-color: white;
+}
+
+input{
+    background-color: #e9e9e9 !important;
+    border: solid black 2px;
+}
+
+button{
+    color:white;
+    background-color: #c07312;
+}
