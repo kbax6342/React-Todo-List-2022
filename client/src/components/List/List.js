@@ -19,14 +19,14 @@ export default function List() {
   return (
     <div className="container rounded-lg mx-auto mt-[5%] p-5">
       <h1 className="text-center text-4xl">Kevin Baxter Todo List</h1>
-      <div className="mx-auto flex mt-3 items-center justify-center">
+      <div className="mx-auto flex mt-3 items-center justify-center mb-3">
         <input
           className="in-box w-4/6 mr-3 p-2 "
           type="text"
           onChange={(e) => setValue(e.target.value)}
         />
 
-        <button className="p-2 rounded-sm" onClick={addingTodo}>
+        <button className="px-4 py-[10px] rounded-sm" onClick={addingTodo}>
           enter
         </button>
       </div>

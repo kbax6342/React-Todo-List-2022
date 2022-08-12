@@ -32,12 +32,13 @@ let weekDay = weekDays[d.getDay()];
 let month = months[d.getMonth()];
 let day = d.getDate();
 let year = d.getFullYear();
+
 export default function ListItem({ todo }) {
   return (
-    <div className="list-container flex items-center">
-      <FaCalendarCheck></FaCalendarCheck>
-      <div className="flex flex-col p-2">
-        {todo}
+    <div className="list-container flex items-center border rounded-lg mb-2 p-3">
+      <FaCalendarCheck className="text-2xl "></FaCalendarCheck>
+      <div className="flex flex-col p-2 ">
+        <span className="text-2xl">{todo}</span>
         <span className="text-xs">{`${weekDay}  ${[month, day, year]}`}</span>
       </div>
     </div>
